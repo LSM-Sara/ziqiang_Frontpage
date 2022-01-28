@@ -2,7 +2,7 @@
   <div class="introductionCard">
     <h1 class="title">{{ title }}</h1>
     <div id="decorat"></div>
-    <div class="text"><slot></slot>	</div>
+    <div class="text"><slot></slot></div>
     <button class="join">
       <p>join</p>
     </button>
@@ -13,26 +13,27 @@
 export default {
   name: "introductionCard",
   props: {
-    title:String
-  }
+    title: String,
+  },
 };
 </script>
 
 <style scoped>
 .introductionCard {
-  position: relative;
-  width: 332px;
-  height: 466.5px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 550px;
   background: #e8f4fa;
   opacity: 1;
-  border: 0.5px solid #e3e0e0;
-  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #e3e0e0;
+  border-radius: 15px 15px 15px 15px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .title {
-  position: absolute;
-  left: 24%;
-  top: 29px;
-  font-size: 32px;
+  margin: 20px 0 10px 0;
+  font-size: 36px;
   font-family: REEJI-CHAO-RanSerifGB-Flash-Regular, REEJI-CHAO-RanSerifGB-Flash;
   font-weight: 400;
   color: rgba(167, 161, 162, 0.7);
@@ -42,11 +43,9 @@ export default {
   background-clip: text;
 }
 #decorat {
-  position: absolute;
-  top: 80px;
-  left: 38%;
-  width: 72px;
-  height: 19.5px;
+  margin: 0 0 10px 0;
+  width: 80px;
+  height: 20px;
   background: #f2f9fc;
   box-shadow: 0px 1.5px 4px 0.5px rgba(0, 0, 0, 0.1607843137254902),
     inset 2.5px 1.5px 4px 0.5px rgba(0, 0, 0, 0.1607843137254902);
@@ -54,23 +53,21 @@ export default {
   opacity: 1;
 }
 .text {
-  position: absolute;
-  left:5%;
-  top: 126px;
-  font-size: 14px;
+  height: 65%;
+  width: 350px;
+  font-size: 16px;
+  line-height: 30px;
   font-family: REEJI-CHAO-RanSerifGB-Flash-Regular, REEJI-CHAO-RanSerifGB-Flash;
   font-weight: 400;
   color: rgba(170, 165, 166, 0.75);
-  line-height: 0px;
   letter-spacing: 1px;
   text-shadow: 0.4px 1px 1.8px #e8f4fa, 0 0 0 #000, 0.4px 1px 1.8px #e8f4fa;
   -webkit-background-clip: text;
   background-clip: text;
 }
 .join {
-  position: absolute;
-  left: 268px;
-  top: 421px;
+  align-self: flex-end;
+  margin: 0 5%;
   width: 52.5px;
   height: 22.5px;
   background: #e8f4fa;
@@ -81,7 +78,7 @@ export default {
 }
 .join p {
   width: 26.5px;
-  height: 13px;
+  height: 15px;
   display: inline;
   font-size: 12px;
   font-family: REEJI-CHAO-RanSerifGB-Flash-Regular, REEJI-CHAO-RanSerifGB-Flash;

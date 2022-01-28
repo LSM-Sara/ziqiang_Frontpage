@@ -15,42 +15,48 @@
 <script>
 export default {
   name: "pageButtons",
-
   methods: {
     prevPage() {
-      this.$router.replace("/team");//改
+      this.$emit('prev-page');     
     },
     toHome() {
-      this.$router.replace("/home");
+      this.$router.replace('/');
     },
     nextPage() {
-      this.$router.replace("/team");//改
+      this.$emit('next-page'); 
     },
   },
 };
 </script>
 <style scoped>
-.pageButtons-div{
+* {
+  margin: 0;
+  padding: 0;
+}
+.pageButtons-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.pageButton{
-  width: 32px;
-  height: 32px;
+.pageButton {
+  width: 40px;
+  height: 40px;
   background: #e8f4fa;
   box-shadow: 2px 1px 3px 0.3px rgba(0, 0, 0, 0.1607843137254902);
   opacity: 1;
   border-radius: 50%;
-  margin: 10px 0;
+  margin: 15px 20px 0px auto;
   text-align: center;
-  
 }
 .pageButton:hover {
   background: #f2f9fc;
   transition: 0.3 all ease-in-out;
 }
-img{
+img {
+  margin: 10px 0;
   display: inline-block;
-  line-height: 32px;
+}
+.pageButton img:hover{
+  width:18px;
 }
 </style>

@@ -28,11 +28,11 @@
           </div>
         </div>
         <div class="information">
-          <h1 class="title">智慧<span>珞珈</span></h1>
+          <h1 class="title">吃<span>乎</span></h1>
           <div class="decorat"></div>
-          <p>为什么是智慧珞珈</p>
-          <p>这一个是简介</p>
-          <p>另一个也是简介</p>
+          <p>武大最强吃货团队 倾力打造</p>
+          <p>最全店铺测评 最新美食资讯</p>
+          <p>走心走胃 少年 吃乎？</p>
         </div>
       </li>
       <li class="slide">
@@ -77,8 +77,8 @@ export default {
 
 ul.slides {
   position: relative;
-  width: 600px;
-  height: 375px;
+  width: 100vw;
+  height: 80vh;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -94,42 +94,41 @@ li.slide {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  font-family: Helvetica;
-  font-size: 120px;
   transition: 0.5s transform ease-in-out;
 }
 .app {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 42vh;
+  height: 42vh;
   margin: 0;
   padding: 0;
   background: #e8f4fa;
-  box-shadow: 2.5px 2.5px 5px 0.5px rgba(0, 0, 0, 0.1607843137254902);
-  border-radius: 21px 21px 21px 21px;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.1607843137254902);
+  border-radius: 32px;
   opacity: 1;
   border: 0.5px solid #e8e8e8;
   overflow: hidden;
+  margin: 0 0 10vw 15vw;
 }
 .circle {
   position: absolute;
-  top: 11px;
-  left: 13px;
-  width: 22px;
-  height: 22px;
+  top: 16px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
   background: #e8f4fa;
   box-shadow: 2.5px 1.5px 3px 0.5px rgba(0, 0, 0, 0.1607843137254902),
     inset 2.5px 1.5px 3px 0.5px rgba(0, 0, 0, 0.1607843137254902);
   opacity: 1;
   border: 0.5px solid #d8d8d8;
-  border-radius: 11px 11px 11px 11px;
+  border-radius: 50%;
 }
 .download-box {
   position: absolute;
   width: 100%;
-  height: 35px;
+  height: 45px;
   bottom: 0px;
   background: #f2f9fc;
   box-shadow: 0px 1.5px 3px 0.5px rgba(0, 0, 0, 0.1607843137254902),
@@ -138,10 +137,10 @@ li.slide {
 }
 .download-box button {
   position: absolute;
-  bottom: 6.5px;
-  right: 10.5px;
-  width: 72.5px;
-  height: 22px;
+  bottom: 8px;
+  right: 15px;
+  width: 80px;
+  height: 25px;
   background: #e8f4fa;
   box-shadow: 2.5px 1.5px 3px 0.5px rgba(0, 0, 0, 0.1607843137254902);
   border-radius: 11px 11px 11px 11px;
@@ -150,7 +149,7 @@ li.slide {
 }
 .download-box button p {
   display: inline;
-  font-size: 12px;
+  font-size: 13px;
   font-family: REEJI-CHAO-RanSerifGB-Flash-Regular, REEJI-CHAO-RanSerifGB-Flash;
   font-weight: 400;
   color: rgba(167, 161, 161, 0.7);
@@ -161,11 +160,10 @@ li.slide {
   background-clip: text;
 }
 .title {
-  font-size: 60px;
+  font-size: 90px;
   font-family: REEJI-CHAO-RanSerifGB-Flash-Regular, REEJI-CHAO-RanSerifGB-Flash;
   font-weight: 400;
   color: rgba(168, 163, 163, 0.7);
-  line-height: 0px;
   text-shadow: 0.4px 1px 1.8px #e8f4fa, 0 0 0 #000, 0.4px 1px 1.8px #e8f4fa;
   -webkit-background-clip: text;
   background-clip: text;
@@ -173,39 +171,28 @@ li.slide {
 .title span {
   color: rgba(212, 124, 130, 0.7);
 }
-.slide:nth-of-type(1) {
-    left:0;
-}
-
-.slide:nth-of-type(2) {
-  left: 100%;
-}
-
-.slide:nth-of-type(3) {
-  left: 200%;
-}
-
-input[type="radio"] {
-  position: relative;
-  z-index: 100;
-  display: none;
+.information {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 15vw 12vw 0;
 }
 .decorat {
-  width: 138.5px;
-  height: 8px;
+  width: 200px;
+  height: 12px;
   background: #f2f9fc;
-  box-shadow: inset 2.5px 1.5px 3px 0.5px rgba(0, 0, 0, 0.1607843137254902);
-  border-radius: 4px 4px 4px 4px;
+  box-shadow: inset 4px 2px 5px 1px rgba(0, 0, 0, 0.1607843137254902);
+  border-radius: 8px;
   opacity: 1;
 }
 .information p {
   height: 30px;
-  font-size: 15px;
+  font-size: 18px;
   font-family: FZCuHeiSongS-B-GB-Regular, FZCuHeiSongS-B-GB;
   font-weight: 400;
   color: rgba(181, 175, 175, 0.75);
   letter-spacing: 1px;
-  line-height: 0px;
   text-shadow: 0.4px 1px 1.8px #e8f4fa, 0 0 0 #000, 0.4px 1px 1.8px #e8f4fa;
   -webkit-background-clip: text;
   background-clip: text;
@@ -213,32 +200,32 @@ input[type="radio"] {
 .controls-box {
   position: absolute;
   width: 100%;
-  bottom: 12px;
+  bottom: 15vh;
   text-align: center;
 }
 .controls-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 332px;
-  height: 30px;
+  width: 500px;
+  height: 50px;
   background: #e8f4fa;
   box-shadow: 5px 3px 5px 0.5px rgba(0, 0, 0, 0.1607843137254902);
-  border-radius: 22px 22px 22px 22px;
+  border-radius: 25px;
   opacity: 1;
   border: 0.5px solid #e5e5e5;
 }
 .controls-visible label {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 22px;
+  height: 22px;
   background-color: #f2f9fc;
   box-shadow: 0px 1.5px 2px 0.5px rgba(0, 0, 0, 0.1607843137254902),
     inset 2.5px 1.5px 2px 0.5px rgba(0, 0, 0, 0.1607843137254902);
   opacity: 1;
   border: 0.5px solid #e5e5e5;
   border-radius: 50%;
-  margin: 0 9px;
+  margin: 0 12px;
 }
 
 .slides
@@ -284,5 +271,20 @@ input[type="radio"] {
 
 .slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
   transform: translatex(-200%);
+}
+.slide:nth-of-type(1) {
+  left: 0;
+}
+
+.slide:nth-of-type(2) {
+  left: 100%;
+}
+
+.slide:nth-of-type(3) {
+  left: 200%;
+}
+input[type="radio"] {
+  position: relative;
+  display: none;
 }
 </style>
