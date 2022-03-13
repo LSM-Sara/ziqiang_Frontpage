@@ -36,7 +36,7 @@ export default {
 }
 .Button img:hover {
   margin: 15px 0;
-  transition: 0.3 all ease-in-out;
+  transition: 0.5 all ease-in-out;
 }
 img {
   margin: 10px 0;

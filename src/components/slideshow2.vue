@@ -263,6 +263,7 @@ input[type="radio"] {
   -webkit-transform: rotatey(-6deg) rotate(15deg);
   transform: rotatey(-6deg) rotate(15deg);
   background: #e8f4fa;
+  box-shadow: 3px 2px 4px 1px rgba(0, 0, 0, 0.1607843137254902);
 }
 .introduction-box .introduction p {
   width: 28vw;
@@ -270,7 +271,7 @@ input[type="radio"] {
   font-family: REEJI-CHAO-RanSerifGB-Flash-Regular, REEJI-CHAO-RanSerifGB-Flash;
   font-weight: 400;
   color: rgba(170, 165, 166, 0.6);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-shadow: 0.4px 1px 1.8px #e8f4fa, 0 0 0 #000, 0.4px 1px 1.8px #e8f4fa;
   -webkit-background-clip: text;
   background-clip: text;

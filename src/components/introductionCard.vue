@@ -27,9 +27,10 @@ export default {
   background: #e8f4fa;
   opacity: 1;
   border: 1px solid #e3e0e0;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 20px;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 4px 3px 5px 1px rgba(0, 0, 0, 0.1607843137254902);
 }
 .title {
   margin: 20px 0 10px 0;
